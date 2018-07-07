@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IMC</title>
+	<!--<link href="style.css" rel="stylesheet">-->
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<script src="imc.js"></script>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>IMC - Indice de Masse Corporelle / BMI - Body Mass Index</h1>
+<p/>
+<form>
+	<div class="form-group row">
+		<div class="col-sm-4">
+			<Label for="nom">Nom / Name</Label>
+		</div>
+		<div class="col-sm-4">
+			<input type="text" id="txtNom" class="inp form-control" name = "nom" placeholder="Nom" />
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-sm-4">
+			<Label for="prenom" class="form-check-label">Prenom / First name</Label>
+		</div>
+		<div class="col-sm-4">
+			<input type="text" id="txtPrenom" class="inp form-control" name = "prenom" placeholder="Prenom" />
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-sm-4">
+			<Label for="taille" class="form-check-label">Taille en cm / Size in meters</Label>
+		</div>
+		<div class="col-sm-4">
+			<input type="number" id="txtTaille" class="inp form-control" name = "taille" min ="100" max="250" step="1" />
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-sm-4">
+			<Label for="poids" class="form-check-label">Poids en kg / Weight in kg</Label>
+		</div>
+		<div class="col-sm-4">
+			<input type="number" id="txtPoids" class="inp form-control" name = "poids" min="25" max="250" step="0.1" />
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-sm-4">
+			Sexe
+		</div>
+		<div class="col-sm-4">	
+			<select id="selectSexe">
+			<option value="F">F&eacute;minin / Female</option>
+			<option value="M">Masculin / Male</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-sm-4">
+			<button type="button" class="Calcul btn btn-dark" id = "cmdCalcul">CALCULER</button>
+		</div>
+		<div class="col-sm-4">	
+			<button type="button" class="Reinit btn btn-primary" id = "cmdReinit">REINITIALISER</button>
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-sm-4">
+			<Label for="imc">IMC</Label>
+		</div>
+		<div class="col-sm-4">
+			<input type="text" id="txtIMC" class="inp" name = "imc" placeholder="imc" />
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-sm-4">
+			<Label for="poidsMini">Poids Mini</Label>
+		</div>
+		<div class="col-sm-4">
+			<input type="text" id="txtPoidsMini" class="inp" name = "poidsMini" placeholder="poidsMini" />
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-sm-4">
+			<Label for="poidsMaxi">Poids Maxi</Label>
+		</div>
+		<div class="col-sm-4">
+			<input type="text" id="txtPoidsMaxi" class="inp" name = "poidsMaxi" placeholder="poidsMaxi" />
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-sm-4">
+			<Label for="poidsIdeal">Poids Ideal</Label>
+		</div>
+		<div class="col-sm-4">
+			<input type="text" id="txtPoidsIdeal" class="inp" name = "poidsIdeal" placeholder="poidsIdeal" />
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-sm-4">
+			<Label for="diagnostic">Diagnostic</Label>
+		</div>
+		<div class="col-sm-4">	
+			<input type="text" id="txtDiagnostic" class="inp" name = "diagnostic" placeholder="diagnostic" />
+		</div>
+	</div>
+</form>
+<p/>
+<div id="copyright">&copy; 2018 Fr&eacute;d&eacute;ric PARENT-VAILLANT</div>
+</div>
+</body>
+
+</html>

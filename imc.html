@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IMC</title>
+	<link href="style.css" rel="stylesheet">
+	<script src="imc.js"></script>
+</head>
+<body>
+<h1>IMC - Indice de Masse Corporelle / BMI - Body Mass Index</h1>
+<p/>
+<form>
+	<fieldset id="fieldIntro">
+		<legend>Introduction</legend>
+		<div id="divIntro">Cet utilitaire permet de calculer son indice de masse corporelle en fonction sa taille, son poids et son genre. Les informations saisies ne sont pas stock&eacute;es, elle sont simplement affich&eacute;es &agrave; titre d'information. Cet outil est r&eacute;serv&eacute; aux adultes.
+		<br /><br />
+		This utility calculates your body mass index based on your height, weight and gender. The information entered is not stored, it is simply displayed for information. This tool is for adult only.</div>
+	</fieldset>
+	<br />
+	<fieldset id="fieldInfo">
+		<legend>Saisie des informations / Entering information</legend>
+		<table>
+			<tr>
+				<td><Label for="nom">Nom / Name</Label></td>
+				<td><input type="text" id="txtNom" class="inp" name = "nom" placeholder="Nom" /></td>
+			</tr>
+			<tr>
+				<td><Label for="prenom">Prenom / First name</Label></td>
+				<td><input type="text" id="txtPrenom" class="inp" name = "prenom" placeholder="Prenom" /></td>
+			</tr>
+			<tr>
+				<td><Label for="taille">Taille en cm / Size in meters</Label></td>
+				<td><input type="number" id="txtTaille" class="inp" name = "taille" min ="100" max="250" step="1" /></td>
+			</tr>
+			<tr>
+				<td><Label for="poids">Poids en kg / Weight in kg</Label></td>
+				<td><input type="number" id="txtPoids" class="inp" name = "poids" min="25" max="250" step="0.1" /></td>
+			</tr>
+			<tr>
+				<td>   Sexe   </td>
+				<td><select id="selectSexe"><option value="F">F&eacute;minin / Female</option>
+			<option value="M">Masculin / Male</option></select></td>
+			</tr>
+		</table>	
+	</fieldset>
+	<br />
+	<button type="button" class="Calcul" id = "cmdCalcul">CALCULER</button>
+	<button type="button" class="Reinit" id = "cmdReinit">REINITIALISER</button>
+	<br />
+	<fieldset id="fieldResult">
+		<legend>Resultats / Results</legend>
+		<table>
+			<tr>
+				<td><Label for="imc">IMC</Label></td>
+				<td><input type="text" id="txtIMC" class="inp" name = "imc" placeholder="imc" /></td>
+			</tr>
+			<tr>
+				<td><Label for="poidsMini">Poids Mini</Label></td>
+				<td><input type="text" id="txtPoidsMini" class="inp" name = "poidsMini" placeholder="poidsMini" /></td>
+			</tr>
+			<tr>
+				<td><Label for="poidsMaxi">Poids Maxi</Label></td>
+				<td><input type="text" id="txtPoidsMaxi" class="inp" name = "poidsMaxi" placeholder="poidsMaxi" /></td>
+			</tr>
+			<tr>
+				<td><Label for="poidsIdeal">Poids Ideal</Label></td>
+				<td><input type="text" id="txtPoidsIdeal" class="inp" name = "poidsIdeal" placeholder="poidsIdeal" /></td>
+			</tr>
+			<tr>
+				<td><Label for="diagnostic">Diagnostic</Label></td>
+				<td><input type="text" id="txtDiagnostic" class="inp" name = "diagnostic" placeholder="diagnostic" /></td>
+			</tr>
+		</table>
+	</fieldset>
+</form>
+<p/>
+<div id="copyright">&copy; 2018 Fr&eacute;d&eacute;ric PARENT-VAILLANT<div>
+
+</body>
+
+</html>

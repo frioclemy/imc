@@ -1,0 +1,71 @@
+body {
+	color:black;
+	background:url("fond.jpg") no-repeat ;
+	background-size:cover;
+}
+
+h1
+{
+	font-family: "Calibri";
+	font-size: 28px;
+	color: green;
+}
+
+button
+{
+	background-color: lightgreen;
+ 	width: auto;
+ 	border:1px solid black;
+	font-family: "Calibri";
+	font-size: 20px;
+	margin: 10px;
+}
+
+#fieldInfo,#txtNom, #txtPrenom, #txtTaille, #txtPoids, #selectSexe
+{
+	border-radius: 10px;
+	border-color: green;
+	font-family: "Calibri";
+	font-size: 20px;
+}
+
+#fieldResult, #txtIMC, #txtPoidsMini, #txtPoidsMaxi, #txtPoidsIdeal, #txtDiagnostic
+{
+	border-radius: 10px;
+	border-color: green;
+	font-family: "Calibri";
+	font-size: 20px;
+}
+
+#fieldResult, #fieldInfo
+{
+	width:900px;
+}
+
+#fieldIntro
+{
+	border-radius: 10px;
+	border-color: green;
+	font-family: "Calibri";
+	font-size: 20px;
+	font-style: italic;
+	width:900px;
+}
+
+#copyright
+{
+	font-family: "Calibri";
+	font-size: 16px;
+	color: green;
+}
+
+input, select
+{
+	margin-left : 50px;
+	width:250px;
+}
+
+#txtDiagnostic
+{
+	width:550px;
+}
